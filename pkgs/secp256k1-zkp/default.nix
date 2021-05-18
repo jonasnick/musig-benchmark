@@ -6,13 +6,13 @@ stdenv.mkDerivation {
   version = "0.1";
 
   src = fetchFromGitHub {
-    owner = "ElementsProject";
-    repo = "secp256k1-zkp";
-    rev = "ed69ea79b429beae4260917e08fe60317d38ee8d";
-    sha256 = "0mwl81zx5i79yiqbc4yrr793qz10mf738dj7hl4ah59cqpw2dkkq";
-  };
+     owner = "jonasnick";
+     repo = "secp256k1-zkp";
+     rev = "2301071766eefb1c2cac836e21a0f514d8ccda81";
+     sha256 = "0zkb0igdxgzwpbxff6xspam8yphqv5k6xfqwxsgggrff5w9d3xiw";
+   };
 
   nativeBuildInputs = [ autoreconfHook ];
 
-  configureFlags = [ "--enable-experimental --enable-module-musig --enable-module-schnorrsig"  ];
+  configureFlags = [ "--enable-experimental --enable-module-musig"  ];
 }

@@ -2,6 +2,8 @@
 
 Benchmark the [libsecp256k1-zkp](https://github.com/ElementsProject/secp256k1-zkp/) implementations for MuSig key aggregation and signing.
 
+This code exists only for experimental purposes and does not demonstrate how to use libsecp256k1 correctly - very much the opposite.
+
 ## Example
 
 ```
@@ -22,7 +24,7 @@ sig: FF80F94C860692607026515AA7DFD503C8B0EC4E2F49FEBCE3B7CC54D58752BF6362121E9DD
 The easiest way is to install the nix package manager and run
 
 ```
-nix-build -A musig-bench
+nix-build -A musig-benchmark
 ```
 
 Alternatively you can make the Makefile work for you.
